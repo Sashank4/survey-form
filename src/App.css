@@ -1,38 +1,191 @@
 .App {
-  text-align: center;
+  font-family: 'Inter', sans-serif;
+  height: 100%;
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body { 
+  background: linear-gradient(240.88deg, #C1B0F8 12.52%, #FAF8ED 55.41%, #F6D0CA 92.26%);
+  color: #000;
+  background-size: contain;
+  background-repeat: no-repeat;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+main {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.description {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 500px;
+  width: 100%;
+  padding: 5rem;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.description-title {
+  font-size: 7rem;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 9rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.description-text {
+  font-size: 1.3rem;
+  font-weight: 900;
+  letter-spacing: 0.09rem;
+  line-height: 2.5rem;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+
+.survey { 
+  align-items: self-start;
+  display: flex;
+  padding: 20px 20px 0px 0px;
+
+}
+
+.survey-container {
+  width: 510px;
+  height: 70%;
+  padding: 56px;
+  background: rgba(255, 255, 255, 0.3);
+  border: 4px solid #000000;
+  box-shadow: 15px 15px 0px 0px #000000;
+}
+
+form {
+width: 60vw;
+max-width: 500px;
+min-width: 300px;
+margin: 0 auto;
+padding-bottom: 2em;
+}
+
+fieldset {
+border: none;
+padding: 0.5rem 0;
+}
+
+.first label, .third label {
+display: block;
+margin: 1rem 0;
+text-transform: uppercase;
+font-weight: 900;
+font-size: 1.2rem;
+letter-spacing: 0.09rem;
+}
+
+.second label {
+display: block;
+margin: 0 0;
+text-transform: capitalize;
+font-size: 1.4rem;
+letter-spacing: 0.1rem;
+font-weight: 400;
+}
+
+input,
+textarea,
+select {
+margin: 10px 0 0 0;
+width: 97.5%;
+min-height: 2.5em;
+background-color: #fff;
+border: 3px solid #000;
+color: #9E9E9E;
+padding-left: 0.5em;
+}
+
+.inline {
+width: unset;
+margin: 0 0.5em 0 0;
+vertical-align: middle;
+}
+
+button{
+display: block;
+width: 50%;
+margin: 1em auto;
+height: 3.5em;
+font-size: 1.1rem;
+background-color: #ffa895;
+border: 3px solid #000;
+color: #000;
+min-width: 300px;
+text-transform: uppercase;
+font-weight: 900;
+font-size: 1.2rem;
+letter-spacing: 0.09rem;
+cursor: pointer;
+}
+
+button:hover {
+  background-color: #ffccc1 ;
+}
+
+
+
+.second p {
+font-size: 1.3rem;
+font-weight: 900;
+letter-spacing: 0.09rem;
+line-height: 2.5rem;
+margin-top: 10px;
+text-transform: uppercase;
+}
+
+.popup{
+  width: 400px;
+  height: 100vh;
+  align-items: center;
+  margin: auto;
+  padding: 4rem;
+}
+
+.popup-content{
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  padding: 2rem;
+  width: 510px;
+  height: auto;
+  background: rgba(255, 255, 255, 0.3);
+  border: 4px solid #000000;
+  box-shadow: 15px 15px 0px 0px #000000;
+  align-items: center;
+}
+
+button{
+  display: block;
+  width: 50%;
+  margin: 1em auto;
+  height: 3.5rem;
+  font-size: 1.1rem;
+  background-color: #ffa895;
+  border: 3px solid #000;
+  color: #000;
+  min-width: 300px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.2rem;
+  letter-spacing: 0.09rem;
+  cursor: pointer;
+}
+
+.popup-content p{
+  padding: 2px;
+}
+
+.popup-content p span{
+  font-weight: 700;
 }
